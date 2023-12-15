@@ -1,0 +1,269 @@
+public boolean onTouch(View view, MotionEvent event) {
+
+        byte[] keys = new byte[]{60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71};  // C Major scale(C, C#, D, D#/Eb, E, F, F#/Gb, G, G#/Ab, A, A#/Bb, B)
+        byte[] velocities = {60, 60, 60};   // Middling velocity
+        byte channel = 0;    // send on channel 0
+
+        switch (view.getId()) {
+            case R.id.btSamlpler1:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[0]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[0]}, velocities) ;
+                }break;
+            case R.id.btSamlpler2:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[1]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[1]}, velocities) ;
+                }break;
+            case R.id.btSamlpler3:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[2]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[2]}, velocities) ;
+                }break;
+            case R.id.btSamlpler4:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[3]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[3]}, velocities) ;
+                }break;
+            case R.id.btSamlpler5:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[4]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[4]}, velocities) ;
+                }break;
+            case R.id.btSamlpler6:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[5]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[5]}, velocities) ;
+                }break;
+            case R.id.btSamlpler7:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[6]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[6]}, velocities) ;
+                }break;
+            case R.id.btSamlpler8:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[7]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[7]}, velocities) ;
+                }break;
+            case R.id.btSamlpler9:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[8]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[8]}, velocities) ;
+                }break;
+            case R.id.btSamlpler10:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[9]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[9]}, velocities) ;
+                }break;
+            case R.id.btSamlpler11:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[10]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[10]}, velocities) ;
+                }break;
+            case R.id.btSamlpler12:
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Pressed
+                    mAppMidiManager.sendNoteOn(channel, new byte[]{keys[11]}, velocities) ;
+                } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                    //Released
+                    mAppMidiManager.sendNoteOff(channel, new byte[]{keys[11]}, velocities) ;
+                }break;
+
+        }
+        return false;
+    }
+----------------------------------------------------------------------------------------------------------------
+<Button
+        android:id="@+id/btSamlpler1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/btSamlpler5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/btSamlpler9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <Button
+        android:id="@+id/btSamlpler12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="380dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="8dp"
+        />
+    <SeekBar
+        android:id="@+id/seekBarOCtava"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="380dp"
+        android:rotation="270"/>
+
+    <SeekBar
+        android:id="@+id/seekBarFX"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="500dp"
+        android:rotation="270"/>
+    <TextView
+        android:id="@+id/tvFx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="500dp"
+        android:rotation="270"
+        android:text="@string/fx"/>
+    <TextView
+        android:id="@+id/tvOctava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="550dp"
+        android:rotation="270"
+        android:text="@string/octava"/>
+
+    <Spinner
+        android:id="@+id/inputDevicesSpinner"
+        android:layout_width="270dp"
+        android:layout_marginLeft="450dp"
+        android:layout_height="47dp" />
